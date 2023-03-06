@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcd.bootstrapcdn.con/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet" type="text/css" href="style.css">
+<link href="https://fonts.cdnfonts.com/css/philom" rel="stylesheet">
+                
+<title>Pagina 1</title>
+</head>
+<body>
+
+<div style="margin:24px;">
+	<nav class="navbar navbar-inverse navbar-stick-static-top">
+	<div class="container">
+	<a class="navbar-brand" href="index.html">Inicio</a>
+	<ul class="nav navbar-nav">
+<li>
+<a href="menu.html">Menu</a> 
+</li>
+<li>
+	<a href="formulario.html">Formulario</a>
+</li>
+<li>
+	<a href="resultado.html">Resultado</a>
+</li>
+<li>
+<a href="contacto.html">Contacto</a>
+</li>
+</ul>
+</div>
+</nav>
+</div>
+<h1>Formulario</h1>
+
+
+<form id="pedido">
+	<p><em><u>Nombre: <input type="text" name="nombre" id="nombre" size="30">
+	</p>
+	<p>Apellido: <input type="text" name="apellido" id="apellido" size="30">
+	</p>
+	<p>Direccion: <input type="text" name="direccion" id="direccion" size="30">
+	</p>
+	<p>Colonia: <input type="text" name="colonia" id="colonia" size="30">
+	</p>
+	<p>Telefono: <input type="text" name="telefono" id="telefono" size="10">
+	</p></em></u>
+<p>Servilletas: 
+    	<input  type="radio" name="servilletas" value="Si"><rosa>Si</rosa></rosa>
+    	<input type="radio" name="servilletas" value="No"><morado>No</morado> <br><br>
+<p> Que vas a pedir de comer?:
+    	<select name="comida" id="comida">
+        <optgroup label="Hamburguesas">
+    		<option value="Hamburguesa Clasica">Clasica (Carne, lechuga, queso y tomate)</option>
+    			<option value="Hamburguesa Hawaiana">Hawaiana (Carne, lechuga, queso, tomate y piña)</option>
+          <option value="Hamburguesa Mexicana">Mexicana (Carne, lechuga, tomate, tocino y chorizo</option>
+          <option value="Hamburguesa Especial">Especial (Doble carne, lechuga, tomate, tocino, chorizo y extra queso)</option>
+        </optgroup>
+        <optgroup label="Tacos (Incluyen cilantro y cebolla)">
+          <option value="Tacos al Pastor">Pastor</option>
+           <option value="Tacos Campechanos">Campechanos</option>
+              <option value="Tacos de Asada">Asada</option>
+               <option value="Tacos de Cuerito">Cuerito</option>
+                   <option value="Tacos de Sirlon">Sirlon</option>	
+               </optgroup>
+         <optgroup label="Sincronizadas (Incluyen frijoles, queso, lechuga, cebolla)">
+          <option value="Sincronizada al Pastor">Pastor</option>
+           <option value="Sincronizada de Bisteck">Bisteck</option>
+              <option value="Sincronizada Mixta">Mixta</option>
+        </optgroup>
+         <optgroup label="Hotdogs">
+          <option value="Hotdog Sencillo">Sencillo (Salchicha, tomate, cebolla, mayonesa)</option>
+          <option value="Hotdog Mexicano">Mexicano (Salchicha, tomate, cebolla, mayonesa, chorizo)</option>
+              <option value="Hotdog Especial">Especial (Salchicha, tomate, cebolla, mayonesa, chorizo, queso amarillo)</option>
+        </optgroup>
+         <optgroup label="Pizza">
+          <option value="Pizza de Peperoni">Peperoni (Queso, salsa de tomate, peperoni, especias)</option>
+            <option value="Pizza Hawaiana">Hawaiana (Queso, salsa de tomate, piña, carne,especias)</option>
+          <option value="Pizza Mexicana">Mexicana (Queso, salsa de tomate, salchicha, chorizo, chile morron, especias)</option>
+              <option value="Pizza Especial">Especial (Queso y orilla rellena de queso, salsa de tomate, salchicha, chorizo, piña, carne de su preferencia, chile morron, especias)</option>
+        </optgroup>
+    		</select>
+                <select name="bebida" id="bebida">
+  <optgroup label="Aguas">
+    <option value="Agua de Melon">Melon</option>
+     <option value="Agua de Limon">Limon</option>
+      <option value="Agua de Sandia">Sandia</option>
+       <option value="Agua de Naranja">Naranja</option>
+    </optgroup>
+        <optgroup label="Sodas">
+           <option value="Soda Cola-Cola">Cola</option>
+            <option value="Soda Sprite">Sprite</option>
+             <option value="Soda Joya">Joya</option>
+              <option value="Soda Orange">Orange</option>
+            </optgroup>
+            <optgroup label="Malteadas">
+              <option value="Malteada de Fresa">Fresa</option>
+               <option value="Malteada Vainilla">Vainilla</option>
+                <option value="Malteada de Chocolate">Chocolate</option>
+              </optgroup>
+              <optgroup label="Tes">
+                 <option value="Te de Manzanilla">Manzanilla</option>
+                  <option value="Te Rojo">Rojo</option>
+                   <option value="Te Chai">Chai</option>
+                    <option value="Te de Canela">Canela</option>
+                     <option value="Te de Hinojo">Hinojo</option>
+                  </optgroup>
+                  <optgroup label="Licuados">
+                     <option value="Licuado de Platano">Platano</option>
+                      <option value="Licuado de Melon">Melon</option>
+                       <option value="Licuado de Fresa">Fresa</option>
+                       <option value="Licuado de Papaya">Papaya</option> 
+              </optgroup>
+         </select>
+        <hr>
+        <h1 style="color: blueviolet;">Complementos</h1>
+        <input type="checkbox" id="papas" checked><label for="papas" style="font-size: 20px;">Papas fritas</label><br> 
+         <input type="checkbox" id="papasg"><label for="papasg" style="font-size: 20px;">Papas en gajos</label><br>
+          <input type="checkbox" id="tomate"><label for="tomate" style="font-size: 20px;">Tomate</label><br>
+        <input type="checkbox" id="cebolla"><label for="cebolla" style="font-size: 20px;">Cebolla</label><br>
+        <input type="checkbox" id="pepinillos"><label for="pepinillos" style="font-size: 20px;">Pepinillos</label><br>
+        <input type="checkbox" id="piña"><label for="piña" style="font-size: 20px;">Piña</label><br>
+    	  <input type="checkbox" id="aderezo"><label for="aderezo" style="font-size: 20px;">Aderezo</label><br>
+          <input type="checkbox" id="bbq"><label for="bbq" style="font-size: 20px;">BBQ</label><br>
+           <input type="checkbox" id="mangoh"><label for="mangoh" style="font-size: 20px;">Mango Habanero</label><br>
+            <input type="checkbox" id="buffalo"><label for="buffalo" style="font-size: 20px;">Buffalo</label><br>
+        <input type="checkbox" id="totopos"><label for="totopos" style="font-size: 20px;">Totopos</label><br>
+      </p>
+    	<input type="submit" value="Enviar">
+    	<input type="reset" value="Borrar">
+  </form>
+  <script type="text/javascript">
+  const form=document.getElementById("pedido");
+  form.addEventListener("submit", function(event){
+  event.preventDefault();
+const formData=new FormData(form);
+  const orden={
+  	nombre:formData.get("nombre"),
+  	apellido:formData.get("apellido"),
+  	telefono:formData.get("telefono"),
+  	direccion:formData.get("direccion"),
+  	colonia:formData.get("colonia"),
+  	servilletas:formData.get("servilletas"),
+    bebida:formData.get("bebida"),
+  	comida:formData.get("comida"),
+    papas:document.getElementById("papas").checked ? "Si":"No",
+     papasg:document.getElementById("papasg").checked ? "Si":"No",
+    tomate:document.getElementById("tomate").checked ? "Si" : "No",
+     cebolla:document.getElementById("cebolla").checked ? "Si":"No",
+ pepinillos:document.getElementById("pepinillos").checked ? "Si":"No",
+    piña:document.getElementById("piña").checked ? "Si":"No",
+     aderezo:document.getElementById("aderezo").checked ? "Si":"No",
+      bbq:document.getElementById("bbq").checked ? "Si":"No",
+      mangoh:document.getElementById("mangoh").checked ? "Si":"No",
+       buffalo:document.getElementById("buffalo").checked ? "Si":"No",
+         totopos:document.getElementById("totopos").checked ? "Si":"No"
+};
+  localStorage.setItem("orden",JSON.stringify(orden));
+  window.location.href="pedidorealizado.html";
+});
+</script>
+</body>
+</html>

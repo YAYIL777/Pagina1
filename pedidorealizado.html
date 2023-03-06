@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcd.bootstrapcdn.con/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet" type="text/css" href="style.css">     
+  <link href="https://fonts.cdnfonts.com/css/kg-miss-kindy-bubble" rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/guttenberg-mf" rel="stylesheet">
+                
+
+<title>Pagina 1</title>
+</head>
+<body>
+
+<div style="margin:24px;">
+	<nav class="navbar navbar-inverse navbar-stick-static-top">
+	<div class="container">
+	<a class="navbar-brand" href="index.html">Inicio</a>
+	<ul class="nav navbar-nav">
+<li>
+<a href="pedidorealizado.html">Menu</a> 
+</li>
+<li>
+	<a href="formulario.html">Formulario</a>
+</li>
+<li>
+	<a href="resultado.html">Resultado</a>
+</li>
+<li>
+<a href="contacto.html">Contacto</a>
+</li>
+</ul>
+</div>
+</nav>
+</div>
+
+<h1>Pedido realizado con exito!!</h1>
+
+<ul>
+<p><strong>Nombre: </strong><span id="nombre"></span></p>
+<p><strong>Apellido: </strong><span id="apellido"></span></p>
+<p><strong>Telefono: </strong><span id="telefono"></span></p>
+<p><strong>Direccion: </strong><span id="direccion"></span></p>
+<p><strong>Colonia: </strong><span id="colonia"></span></p>
+<p><strong>Servilletas: </strong><span id="servilletas"></span></p>
+<p><strong>Comida: </strong><span id="comida"></span></p>
+<p><strong>Bebida: </strong><span id="bebida"></span></p>
+<p><strong>Papas fritas: </strong><span id="papas"></span></p>
+<p><strong>Papas en ajos: </strong><span id="papasg"></span></p>
+<p><strong>Tomate: </strong><span id="tomate"></span></p>
+<p><strong>Cebolla: </strong><span id="cebolla"></span></p>
+<p><strong>Pepinillos: </strong><span id="pepinillos"></span></p>
+<p><strong>Piña: </strong><span id="piña"></span></p>
+<p><strong>Aderezo: </strong><span id="aderezo"></span></p>
+<p><strong>BBQ: </strong><span id="bbq"></span></p>
+<p><strong>Mango Habanero: </strong><span id="mangoh"></span></p>
+<p><strong>Buffalo: </strong><span id="buffalo"></span></p>
+<p><strong>Totopos: </strong><span id="totopos"></span></p>
+<script type="text/javascript">
+const orden=JSON.parse(localStorage.getItem("orden"));
+document.getElementById("nombre").textContent=orden.nombre;
+document.getElementById("apellido").textContent=orden.apellido;
+document.getElementById("telefono").textContent=orden.telefono;
+document.getElementById("direccion").textContent=orden.direccion;
+document.getElementById("colonia").textContent=orden.colonia;
+document.getElementById("servilletas").textContent=orden.servilletas;
+document.getElementById("comida").textContent=orden.comida;
+document.getElementById("bebida").textContent=orden.bebida;
+document.getElementById("papas").textContent=orden.papas;
+document.getElementById("papasg").textContent=orden.papasg;
+document.getElementById("tomate").textContent=orden.tomate;
+document.getElementById("cebolla").textContent=orden.cebolla;
+document.getElementById("pepinillos").textContent=orden.pepinillos;
+document.getElementById("piña").textContent=orden.piña;
+document.getElementById("aderezo").textContent=orden.aderezo;
+document.getElementById("bbq").textContent=orden.bbq;
+document.getElementById("mangoh").textContent=orden.mangoh;
+document.getElementById("buffalo").textContent=orden.buffalo;
+document.getElementById("totopos").textContent=orden.totopos;
+</script>
+</script>
+</script>
+</ul>
+</body>
+</html>
